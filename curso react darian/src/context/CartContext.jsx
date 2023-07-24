@@ -1,9 +1,10 @@
-import { useState, createContext } from "react";
+import { useState, createContext, useContext } from "react";
 import { BrowserRouter } from "react-router-dom";
 
 
 export const CartContext = createContext()
 //aca va a ser mi espacio donde decido que elementos compartir con el resto de mi aplicacion
+export const useCartContext = () => useContext(CartContext)//custom hook facilitando la importacion desde otros modulos
 
 export const CartProvider = ({ children }) => {
 

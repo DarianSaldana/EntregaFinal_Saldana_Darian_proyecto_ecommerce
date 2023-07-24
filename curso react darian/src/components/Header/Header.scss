@@ -34,20 +34,63 @@
                 text-decoration: none;
             }
 
+            .header__welcome {
+                color: white;
+                font-size: 18px;
+                font-style: bold;
+                text-decoration: none;
+                padding-left: 20px;
+            }
+
 
         }
     }
 }
 
 .header-v {
-    background-color: rgb(177, 173, 165);
+    background-color: rgba(129, 127, 125, 0.708);
 
-}
+    .header__container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px 0;
 
-.header__welcome {
-    color: rgb(243, 238, 238);
-    font-size: 18px;
-    font-style: bold;
-    text-decoration: none;
-    padding-left: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header__logo {
+            font-size: 40px;
+            font-weight: 700;
+            color: #050202;
+        }
+
+        .header__img {
+            border-radius: 10px;
+            padding: 5px;
+            width: 150px;
+        }
+
+        .header__nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            .header__link {
+                color: #050202;
+                font-size: 18px;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+
+            .header__welcome {
+                color: #050202;
+                font-size: 18px;
+                font-style: bold;
+                text-decoration: none;
+                padding-left: 20px;
+            }
+
+        }
+    }
 }

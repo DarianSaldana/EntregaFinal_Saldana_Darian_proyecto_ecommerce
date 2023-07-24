@@ -12,6 +12,7 @@ import LoginScreen from '../components/Auth/LoginScreen'
 import { useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import RegisterScreen from '../components/Auth/RegisterScreen';
+import Checkout from '../components/Checkout/Checkout';
 
 const AppRouter = () => {
 
@@ -26,6 +27,7 @@ const AppRouter = () => {
 
                         <Routes>
                             <Route path='/cart' element={<Header variant />} />
+                            <Route path='/checkout' element={<Header variant />} />
                             <Route path='*' element={<Header />} />
                         </Routes>
 
@@ -36,6 +38,7 @@ const AppRouter = () => {
                             <Route path='/nosotros' element={<Nosotros />} />
                             <Route path='/contacto' element={<Contacto />} />
                             <Route path='/cart' element={<Cart />} />
+                            <Route path='/checkout' element={<Checkout />} />
                             <Route path='*' element={<Navigate to={'/'} />} />
 
                         </Routes>

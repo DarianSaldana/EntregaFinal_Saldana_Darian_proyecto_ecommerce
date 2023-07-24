@@ -21,9 +21,9 @@ const Header = ({ variant = false }) => {
                     <Link className='header__link' to="/productos/exterior">Exterior</Link>
                     <Link className='header__link' to="/productos/oferta">Ofertas</Link>
                     <p className='header__welcome'> Bienvenido: {user.email} </p>
-                    <button className='btn btn-danger border-5 col-lg-auto p-2 m-5' onClick={logout}>Sign out</button>
+                    <button className='btn btn-danger border-2 col-lg-auto me-5' onClick={logout}>Sign out</button>
                 </nav>
-                {<CartWidget />}
+                {<CartWidget className='btn btn-danger' />}
 
             </div>
 

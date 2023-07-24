@@ -32,7 +32,8 @@ const Cart = () => {
 
             <div>
                 <h5>Total: ${totalCompra()}</h5>
-                <button onClick={vaciarCarrito} className="btn btn-danger">Vaciar Carrito</button>
+                <button onClick={vaciarCarrito} className="btn btn-danger m-1">Vaciar Carrito</button>
+                <Link className="btn btn-success m-1" to='/checkout'>Ir al Checkout</Link>
                 <button onClick={handleVolver} className="btn btn-outline-dark m-1">Volver al catálogo</button>
                 <hr />
             </div>
@@ -45,7 +46,7 @@ const Cart = () => {
                         <img src={prod.img} alt={prod.nombre} />
                         <p>Precio: ${prod.precio}</p>
                         <p>Cantidad: {prod.cantidad}</p>
-                        <button className="btn btn-danger" onClick={() => eliminarDelCarrito(prod.id)}>
+                        <button className="btn btn-danger m-1" onClick={() => eliminarDelCarrito(prod.id)}>
                             <FaTrashAlt />
                         </button>
                         <hr />
